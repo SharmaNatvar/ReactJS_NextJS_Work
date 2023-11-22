@@ -1,0 +1,16 @@
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  font-size: 25px;
+  margin: 10px 20px;
+  padding: 5px 10px;
+}
+
+h2{
+  font-size: 30px;
+  margin: 10px 20px;
+  /* padding: 5px 10px; */
+}
