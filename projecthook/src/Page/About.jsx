@@ -1,12 +1,17 @@
 import React from "react";
-import OldCounterFile from "../Component/OldCounterFile";
+import StafUseState from "../Component/StafUseState";
+// import OldCounterFile from "../Component/OldCounterFile";
 
 const About = () =>{
+
     return(
         <>
             <h1>this is about page</h1>
             <hr/>
-            <OldCounterFile/>
+            {/* <OldCounterFile/> */}
+            <div>
+                <StafUseState/>
+            </div>
         </>
     )
 }
