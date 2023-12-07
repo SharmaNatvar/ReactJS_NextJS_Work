@@ -1,13 +1,13 @@
 # Getting Started with Create React App
 
-IN this Project File \
-i cover this topice
+# In this Project File \
+**i cover this topice**
 useState \
 useRef \
 useEffect \
-Router \
+Router 
 
-**Project** 
+**Project** \
 toDo list \
 Counter
 
