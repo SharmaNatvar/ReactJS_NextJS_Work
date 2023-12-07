@@ -4,6 +4,7 @@ import Home from "./Page/Home";
 import About from "./Page/About";
 import Contact from "./Page/Contact";
 import Navbar from "./Component/Navbar";
+import Todo from "./Page/Todo";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/About" element={<About/>}/>
           <Route path="/Contact" element={<Contact/>}/>
+          <Route path="/Todo" element={<Todo/>}/>
         </Routes>
       </BrowserRouter>
     </>

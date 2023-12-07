@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+
 
 const Contact = () => {
-  return (
+  const inputValue = useRef();
+  const [inputData , setInputData] = useState([])
+
+  // const data = ;
+
+  const valueSubmit = () => {
+      // let data = inputValue.current.value;
+      setInputData([...inputData,inputValue.current.value]);
+  }
+
+  return(
     <>
-      <h1>this is Contact page</h1>
+    <div>
+        <input type='text' ref={inputValue}/>
+        <button type='button' onClick={()=>valueSubmit()}>Submit</button>
+        {/* <h1>{inputData}</h1><br/> */}
+        {
+            inputData?.map((item , index)=>{return (
+                <h1 key={index}>{item}</h1>)
+            })
+        }
+    </div>
     </>
   )
 }
