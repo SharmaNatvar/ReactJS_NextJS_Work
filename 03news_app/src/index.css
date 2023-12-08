@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.containerCustom{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.dark .cardStyle{
+  background: #131212;
+  color: #f1f1f1;
+}
