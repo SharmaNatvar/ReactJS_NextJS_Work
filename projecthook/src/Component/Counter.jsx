@@ -54,13 +54,13 @@ const Counter = () => {
 
   return (
     <>
-      <div className='row'>
+      <div className='rows'>
         <button disabled = {history.length === 0 } onClick={undo}>Undo</button>
         <button disabled = {undoHistory.length === 0} >Redo</button>
         <button onClick={reset}>Reset</button>
       </div>
       <hr/>
-      <div className='row'>
+      <div className='rows'>
         <button onClick={()=>doCalc('divide') } >/2</button>
         <button onClick={()=>doCalc('sub')}>-1</button>
         <h2>{counter}</h2>
@@ -68,7 +68,7 @@ const Counter = () => {
         <button onClick={()=>doCalc('multi')}>x2</button>
       </div>
       <hr/>
-      <div className='row'>
+      <div className='rows'>
         <table >
         <thead>
         <tr>

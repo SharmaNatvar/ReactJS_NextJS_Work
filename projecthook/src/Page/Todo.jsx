@@ -1,50 +1,40 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useRef } from "react";
 
 const Todo = () => {
+    let data 
+    (localStorage.getItem('todoList') === null) ? data = [ ] : data = JSON.parse(localStorage.getItem('todoList'));
 
-    const [text,setText]=useState([
-        {
-            id:1,
-            title:'work',
-            desc:'lorem and why what and tha ncj'
-        },
-        {
-            id:2,
-            title:'Nothing',
-            desc:'lorem and why what and tha ncj'
-        },
-        {
-            id:3,
-            title:'work',
-            desc:'lorem and why what and tha ncj'
-        }
-    ])
 
-    // setText();
-
+    const [text,setText]=useState(data )
+    console.log(data);
 
     const titleInput = useRef(null);
     const descInput = useRef(null);
 
-const addTodo = (event)=>{
-    event.preventDefault()
-    const titleText = titleInput.current.value;
-    const descText = descInput.current.value;
-    
-    ( titleText !== '' && descText !== '') ? setText([...text , {title:titleText, desc:descText}]) :alert('please enter text');
+    // console.log(text.length);
 
-    titleInput.current.value = ''
-    descInput.current.value = ''
-}
+
+    const addTodo = (event)=>{
+        event.preventDefault()
+        const titleText = titleInput.current.value;
+        const descText = descInput.current.value;
+        const idText = text.length != 0 ? text[text['length']-1].id+1 : 1;
+        
+        (titleText !== '' && descText !== '') ? setText([...text , {id:idText, title:titleText, desc:descText}]) :alert('please enter text');
+
+        titleInput.current.value = '';
+        descInput.current.value = '';
+    }
+
+    useEffect(()=>{localStorage.setItem('todoList' , JSON.stringify(text))},[text])
+
 
     const deleteTodo = (id) => {
         let result = text.filter((event)=> event.id !== id);
         setText(result)
     }
 
-
-// let arro = true
   return (
     <>
         <div className="todo_bg">

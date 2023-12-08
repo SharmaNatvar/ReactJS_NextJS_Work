@@ -10,7 +10,7 @@ const UseBoolean = () => {
 
   return (
     <>
-      <div className='row'>
+      <div className='rows' >
         <h2>learn Boolean</h2>
         <button onClick={toggle}>click here</button>
         {

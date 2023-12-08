@@ -4,20 +4,25 @@
   max-width: 1170px;
 }
 
-.row{
+.rows{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.col-6{
+/* .col-6{
   width: 50%;
-}
+} */
 
 button{
   font-size: 25px;
   margin: 10px 20px;
   padding: 5px 10px;
 }
+
+/* .row>* {
+  flex-shrink: 0;
+  width: 100;
+} */
 
 h2{
   text-align: center;
@@ -63,7 +68,7 @@ span{
 
 .todo_bg{
   /* width: 100; */
-  height: 100dvh;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
