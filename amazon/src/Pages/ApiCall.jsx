@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 
 const ApiCall = () => {
 
-    const [apiData, setApiData] = useState([])
+    const [apiData, setApiData] = useState([]);
+    
     useEffect(()=>{
         axios.get('https://jsonplaceholder.typicode.com/users')
         .then((response)=>{
@@ -16,7 +17,7 @@ const ApiCall = () => {
   return (
     <>
       <h1>Api Call</h1>
-      <div className='d-flex row'>
+      <div className=' row'>
 
       {
 

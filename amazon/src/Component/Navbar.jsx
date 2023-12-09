@@ -4,12 +4,19 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      
-
-        <Link className='m-2' to="/">Home </Link>
-        <Link className='m-2' to="/About">About</Link>
-        <Link className='m-2' to="/Product">Product</Link>
-        <Link className='m-2' to="/ApiCall">ApiCall</Link>
+      <div className="navbarBg">
+          <div className="containerCustom">
+            <div className="d-flex justify-content-between ">
+              <div className="navbarCustom "> 
+                <p><Link className='m-2' to="/">Home </Link></p>
+                <p><Link className='m-2' to="/About">About</Link></p>
+                <p><Link className='m-2' to="/Product">Product</Link></p>
+                <p><Link className='m-2' to="/ApiCall">ApiCall</Link></p>
+              </div>
+              <span className="text-light"><i className="fas fa-cart-plus"></i></span>
+            </div>
+          </div>
+      </div>
     </>
   );
 };

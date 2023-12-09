@@ -112,49 +112,7 @@ const data = [
         price:358,
         desc:"fence speak dinner slight foot elephant pay lucky badly eventually practical wonderful frequently locate freedom cat busy aware dry at broken manufacturing stove bring",
         availablity: true,
-    },
-    {
-        productName:"Louise",
-        price:204,
-        desc:"several sitting sum cell some sick scientist congress new sort but clean ball tail cool believed boy yet own hill average what soil angry",
-        availablity: true,
-    },
-    {
-        productName:"Etta",
-        price:454,
-        desc:"die action women sad clean sink spite act who industrial chance chart parallel shallow swept black wide think say writing church while door animal",
-        availablity: true,
-    },
-    {
-        productName:"Marion",
-        price:490,
-        desc:"sold love may condition cent am black back rather born sky hang lift neighborhood enjoy apartment do share piece pet watch grew personal beside",
-        availablity: true,
-    },
-    {
-        productName:"Elsie",
-        price:304,
-        desc:"longer understanding outer hour simple drive can ten object buy individual stood telephone hurt another outside father cheese central nice successful clearly facing sentence",
-        availablity: true,
-    },
-    {
-        productName:"Mark",
-        price:791,
-        desc:"hay post coal since putting mighty ants thank valley out run congress west driven copy type pole now figure fifth person discuss lie salmon",
-        availablity: true,
-    },
-    {
-        productName:"Charlotte",
-        price:530,
-        desc:"cowboy drove powerful calm stiff hurt steel suddenly movement battle distant which exact additional planned average tone event production pour level bear beginning wide",
-        availablity: true,
-    },
-    {
-        productName:"James",
-        price:772,
-        desc:"sad pond straw important fuel follow court fifth slip alphabet name firm whatever sang wash height jar paint ten held onto pictured zoo rather",
-        availablity: true,
-    },
+    }
     
 ];
 
