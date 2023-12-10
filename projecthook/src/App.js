@@ -5,6 +5,8 @@ import About from "./Page/About";
 import Contact from "./Page/Contact";
 import Navbar from "./Component/Navbar";
 import Todo from "./Page/Todo";
+import Curd from "./Page/Curd";
+import UpdateCurd from "./Component/UpdateCurd";
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/About" element={<About/>}/>
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/Todo" element={<Todo/>}/>
+          <Route path="/Curd" element={<Curd/>}/>
+          <Route path="/UpdateCurd" element={<UpdateCurd/>}/>
         </Routes>
       </BrowserRouter>
     </>
