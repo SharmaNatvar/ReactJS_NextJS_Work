@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import Navbar from '../Component/Navbar';
 import JsonData from '../JsonData'
 
 
@@ -37,7 +36,6 @@ const Testimonial = (props) => {
 
   return (
     <>
-    <Navbar/>
         <div className='m-4'>
             <input type='text' name='fname' placeholder='enter your name' onChange={getInput}></input><br/><br/>
             <input type='email' name='email' placeholder='enter your email' onChange={getInput}></input>
