@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { UrlApi, getUrl } from '../ApiUrl'
-import { getApiData } from '../Api/ApiFun'
+import { UrlApi, deleteUrl, getUrl } from '../ApiUrl'
+import { deleteApiData, getApiData } from '../Api/ApiFun'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 const Curd = () => {
   const [apiData, setApiData] = useState([])
@@ -11,7 +12,10 @@ const Curd = () => {
       .then((res) => setApiData(res))
   }, [])
 
-
+  const deleteUser = async(id , index ) =>{
+    await deleteApiData(UrlApi, deleteUrl,id)
+    setApiData(apiData.splice(0,index))
+  }
 
   return (
     <>
@@ -41,8 +45,8 @@ const Curd = () => {
                     <td>{e.nameInput}</td>
                     <td>{e.emailInput}</td>
                     <td><button type="button" className="btn btn-info btn-sm mx-1">view</button>
-                    <button type="button" className="btn btn-success btn-sm mx-1">Update</button>
-                    <button type="button" className="btn btn-danger btn-sm mx-1">Delete</button></td>
+                    <Link to={`/Curd/UpdateUser/${e.id}`}><button type="button" className="btn btn-success btn-sm mx-1">Update</button></Link>
+                    <button type="button" className="btn btn-danger btn-sm mx-1" onClick={()=>{deleteUser(e.id ,index)}}>Delete</button></td>
                   </tr>
                 </>
               )

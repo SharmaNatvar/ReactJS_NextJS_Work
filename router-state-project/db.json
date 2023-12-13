@@ -1,11 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "nameInput": "krishna",
-      "emailInput": "sharma"
-    },
-    {
       "id": "3",
       "nameInput": "krishna",
       "emailInput": "sharma"
@@ -71,30 +66,14 @@
       "id": "4rA7CX4"
     },
     {
-      "nameInput": "hay",
-      "emailInput": "kya huaa",
+      "nameInput": "krishna",
+      "emailInput": "kyahuaa@gmail.com",
       "id": "Syy6WA-"
     },
     {
       "nameInput": "hay",
       "emailInput": "jkua",
       "id": "2d0GEsI"
-    },
-    {
-      "nameInput": "hay",
-      "emailInput": "hello",
-      "id": "sG8TtdA"
-    },
-    {
-      "nameInput": "kya baat ",
-      "emailInput": "h bhai",
-      "id": "ix40iW5"
-    },
-    {
-      "id": "Nf0z1RO"
-    },
-    {
-      "id": "Rju-Ntr"
     }
   ]
 }
