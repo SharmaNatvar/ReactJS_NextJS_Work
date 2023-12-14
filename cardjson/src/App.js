@@ -1,38 +1,32 @@
-import React, { useState } from "react";
-import Card from "./Component/Card";
-import NameChange from "./Component/NameChange";
-import books from "./json"
+import React from "react";
+import Navbar from "./Component/Navbar/Navbar";
+import Cards from "./Pages/Cards";
+import {  Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Table from "./Pages/Table";
+import AddUser from "./Component/AddUser";
+import UpdateUser from "./Component/UpdateUser";
+import ViewUser from "./Component/ViewUser";
 
 function App() {
 
-  const [bookData, setBookData] = useState(books);
-
-  function deleteCard(item) {
-    let updatedData = bookData.filter(i => i.book != item.book)
-    setBookData(updatedData)
-  }
-
-  function addBook(item) {
-    if(item.fname && item.lname) {
-      let newData = [...bookData, {book: item.fname, writer: item.lname}]
-      setBookData(newData)
-    } else {
-      window.alert("give proper values!!")
-    }
-  }
 
   return (
     <>
-          <NameChange
-        addBookEntry={(item) => addBook(item)}
-      />
-      
-      <Card
-        books = {bookData}
-        deleteCardData = {(item) => deleteCard(item)}
-      />
-
-
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Home" element={<Home/>}/>
+        <Route path="/Cards" element={<Cards/>}/>
+        <Route path="/Table" element={<Table/>}/>
+        <Route path="/Table/AddUser" element={<AddUser/>}/>
+        <Route path="/Table/UpdateUser/:id" element={<UpdateUser/>}/>
+        <Route path="/Table/ViewUser/:id" element={<ViewUser/>}/>
+        <Route path="/About" element={<About/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+      </Routes>
     </>
   );
 }

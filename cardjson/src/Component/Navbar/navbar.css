@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    border: 1px solid #fffa;
+    background: #fff4;
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 20px 40px -10px #0004;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+li:hover span::before{
+    top: -5px;
+}
+
+li:hover span::after{
+    top: 1.5rem;
+}
+
+span{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+    color: transparent;
+    max-height: 1.7rem;
+}
+
+span::before{
+    content: attr(text);
+    color: rgb(0, 166, 255);
+    top: -2rem;
+    position: absolute;
+    transition: 0.3s;
+}
+
+span::after{
+    content: attr(text);
+    color: black;
+    top: -5px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+span:nth-child(2)::after,
+span:nth-child(2)::before{
+    transition-delay: 50ms;
+}
+
+span:nth-child(3)::after,
+span:nth-child(3)::before{
+    transition-delay: 100ms;
+}
+
+span:nth-child(4)::after,
+span:nth-child(4)::before{
+    transition-delay: 150ms;
+}
+
+span:nth-child(5)::after,
+span:nth-child(5)::before{
+    transition-delay: 200ms;
+}
+
+span:nth-child(6)::after,
+span:nth-child(6)::before{
+    transition-delay: 250ms;   
+}
+
+span:nth-child(7)::after,
+span:nth-child(7)::before{
+    transition-delay: 300ms;
+}
