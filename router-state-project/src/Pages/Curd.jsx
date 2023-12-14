@@ -13,8 +13,9 @@ const Curd = () => {
   }, [])
 
   const deleteUser = async(id , index ) =>{
-    await deleteApiData(UrlApi, deleteUrl,id)
-    setApiData(apiData.splice(0,index))
+    await deleteApiData(UrlApi, deleteUrl,id);
+    
+    setApiData(apiData.splice( 0, index))
   }
 
   return (
