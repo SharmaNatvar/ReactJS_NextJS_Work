@@ -4,7 +4,7 @@
     "start:server": "npx json-server --watch db.json --port 3030",
     "start:react": "react-scripts start",
     "start": "concurrently \"npm run start:server\" \"npm run start:react\""
-    } \
+    } 
 
   "scripts": {
     "start": "react-scripts start",
@@ -18,8 +18,8 @@
   "start": "concurrently \"npx json-server --watch db.json\" \"react-scripts start\""
 }
 
-# `before use `
-**install some commend**
+## `before use `
+**install some**\
 npm i concurrently \
 npm i axios \
 npm i json server \
