@@ -1,10 +1,13 @@
 
 #### `some way to start json server and react file`
+
+*first*\
     "scripts": {
     "start:server": "npx json-server --watch db.json --port 3030",
     "start:react": "react-scripts start",
     "start": "concurrently \"npm run start:server\" \"npm run start:react\""
     } 
+*second*\
 
   "scripts": {
     "start": "react-scripts start",
@@ -12,7 +15,7 @@
     "start:dev": "concurrently \" npm start \" \" npm run json-server \"",
   }
 
-**this also use**
+**this also use**\
 
 "scripts": {
   "start": "concurrently \"npx json-server --watch db.json\" \"react-scripts start\""
