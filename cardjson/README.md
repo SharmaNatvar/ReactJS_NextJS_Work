@@ -15,6 +15,8 @@ to config this ya to start this file json and react i use concurrently \
     "json-server" :"json-server --watch db.json --port 3333", \
     "start:dev" : "concurrently \" npm start \" \"npm run json-server \"", \
 
+    to start this app use =>npm run start:dev\
+
 Curd \
 
 
