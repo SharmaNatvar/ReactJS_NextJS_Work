@@ -1,43 +1,47 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { removeToCart, addToCard, emptyToCart } from '../reduxSaga/action'
 import { productList } from '../reduxSaga/productAction'
 
 const Data = () => {
-    const dispatch =  useDispatch()
-    const userName = useRef()
-    const password = useRef()
+  const dispatch = useDispatch()
 
-    const result = useSelector(state => state.userProductList)
-    console.log('data result in selector',result );
+  const result = useSelector(state => state.userProductList)
+  console.log('data result in selector', result);
 
-    const handleData = () =>{
-        const inputData = {
-            userName : userName.current.value,
-            password : password.current.value
-        }
-        
-        dispatch(addToCard(inputData))
-    }
-    
+  const emptyData = () => {
+    dispatch(emptyToCart())
+  }
 
-    const removeData = () =>{
-        dispatch(removeToCart())
-    }
-
-    const emptyData = () =>{
-        dispatch(emptyToCart())
-    }
+  useEffect(() => { dispatch(productList()) }, [])
 
   return (
     <>
       <h1>data</h1>
-      <input type="text" placeholder='User Name' ref={userName}/><br/>
-      <input type="text" placeholder='password' ref={password}/>
-      <button onClick={handleData}>Add Cart</button>
-      <button onClick={removeData}>Remove Cart</button>
+
       <button onClick={emptyData}>Empty Cart</button>
-      <button onClick={()=>dispatch(productList())}> Product List </button>
+      {/* <button onClick={() => dispatch(productList())}> Product List </button> */}
+
+      <div className='product_bg'>
+        <div className="container_bg">
+          <div className='product'>
+            {
+              result?.map((item) => {
+                return (
+                  <div className='product_list' key={item.id}>
+                    <img src={item.image} alt="image " />
+                    <h3>{item.title.slice(0, 12).toLowerCase()}....</h3>
+                    <h4>&#36; {item.price}</h4>
+                    <p>{item.description.slice(0, 25).toLowerCase()}....</p>
+                    <button onClick={() => { dispatch(addToCard(item)) }}>Add Cart</button>
+                    <button onClick={() => { dispatch(removeToCart(item.id)) }}>Remove Cart</button>
+                  </div>
+                )
+              })
+            }
+          </div>
+        </div>
+      </div>
     </>
   )
 }

@@ -15,9 +15,9 @@ export const userInputData = ( inputData = [] , action) =>{
             return [action.inputData, ...inputData];
 
         case REMOVE_TO_CART :
-            console.log("reducer",action);
-            inputData.length ? inputData.length = inputData.length  - 1 : inputData = [];
-            return [...inputData];
+            console.log(action.id , 'action');
+            const newInputData = inputData.filter((e)=>e.id !== action.id) 
+            return [...newInputData];
 
         case EMPTY_TO_CART :
             console.log("reducer",action);

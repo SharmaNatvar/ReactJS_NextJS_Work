@@ -1,12 +1,15 @@
-import { PRODUCT_LIST } from "./constant";
+import { PRODUCT_LIST, PRODUCT_SEARCH } from "./constant";
 
-export const productList = async() =>{
-    let data = await fetch('https://jsonplaceholder.typicode.com/posts');
-    data = await data.json()
-    console.log('productAction ', data);
-
+export const productList = () =>{
     return{
         type: PRODUCT_LIST,
-        data
     }
 }
+
+export const productSearch = (query) =>{
+    return{
+        type: PRODUCT_SEARCH,
+        query
+    }
+}
+

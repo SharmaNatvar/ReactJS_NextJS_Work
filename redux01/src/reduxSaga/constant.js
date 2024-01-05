@@ -8,3 +8,5 @@ export const EMPTY_TO_CART = "EMPTY_TO_CART";
 // for product 
 
 export const PRODUCT_LIST = "PRODUCT_LIST";
+export const SET_PRODUCT_LIST = "SET_PRODUCT_LIST";
+export const PRODUCT_SEARCH = "PRODUCT_SEARCH";

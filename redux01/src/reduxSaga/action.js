@@ -9,9 +9,10 @@ export const addToCard = (inputData) =>{
     }
 }
 
-export const removeToCart = () => {
+export const removeToCart = (id) => {
     return{
         type : REMOVE_TO_CART,
+        id
     }
 }
 
