@@ -5,8 +5,8 @@ import { GET_PRODUCT_PROGRESS } from "./Redux-Saga/user/Action/action";
 function App() {
   // const [apiData , setApiData] = useState()
   const dispatch = useDispatch()
-  const selector = useSelector((state)=>console.log(state))
-  console.log(selector);
+  const selector = useSelector((state)=>state.userReducer)
+  console.log(selector ,'app selector');
 
   // console.log(apiData);
   const getApiData =() =>{

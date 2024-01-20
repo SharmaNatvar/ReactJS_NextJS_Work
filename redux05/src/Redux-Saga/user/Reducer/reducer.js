@@ -8,8 +8,8 @@ const initialState = {
     isError : null
 }
 
-const reducer = ( state = initialState , action) =>{
-console.log(action,'reducer action');
+const userReducer = ( state = initialState , action) =>{
+console.log(action,'userReducer action');
     switch(action.type){
         // get data case
         case GET_PRODUCT_PROGRESS:{
@@ -127,4 +127,4 @@ console.log(action,'reducer action');
 }
 
 
-export default reducer
+export default userReducer
