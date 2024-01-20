@@ -1,0 +1,5 @@
+
+// get api data 
+export const GET_API_DATA_PENDING = "GET_API_DATA_PENDING";
+export const GET_API_DATA_FULFILLED = "GET_API_DATA_FULFILLED";
+export const GET_API_DATA_REJECTED = "GET_API_DATA_REJECTED";
