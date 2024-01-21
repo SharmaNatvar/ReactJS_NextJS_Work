@@ -1,0 +1,34 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "title": "java Developer",
+      "salary": 12000,
+      "location": "Macau SAR China"
+    },
+    {
+      "id": 2,
+      "title": "js Developer",
+      "salary": 107317,
+      "location": "Eritrea"
+    },
+    {
+      "id": 3,
+      "title": "vue Developer",
+      "salary": 85030,
+      "location": "Italy"
+    },
+    {
+      "id": 4,
+      "title": "react Developer",
+      "salary": 87163,
+      "location": "Mayotte"
+    },
+    {
+      "id": 5,
+      "title": "json Developer",
+      "salary": 22425,
+      "location": "Iraq"
+    }
+  ]
+}

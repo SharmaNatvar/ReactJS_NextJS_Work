@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --primery : #bc4123;
+  --secondary : #2b3452;
+  --backgroundColor : #ede4cd;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+}
+
+body{
+  /* padding: 20px; */
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--secondary);
+}
+
+p{
+  margin: 20px 0;
+}
+
+button{
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: #fff;
+  background: var(--primery);
+  cursor: pointer;
+}
+
+.container{
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* navbar &&  Help */
+
+.navbar_bg{
+  background: var(--backgroundColor);
+  padding: 10px 15px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.help_bg ul,
+.navbar ul{
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.navbar h1{
+  color: #2a2c33;
+  font-weight: 900;
+  border-bottom: 5px solid var(--primery);
+
+}
+
+.help_bg li,
+.navbar li{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: #2a2c33;
+
+}
+.help_bg li:hover,
+.navbar li:hover{
+  background: var(--primery);
+}
+
+/* Faq */
+.testimonial,
+.faq{
+  background: #080809;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+/* page content */
+
+
+
+
+
+/* help layout */
+
+
+
+
+
+
+
+
+
+/* careers list */
+
+
+
+
+/* careers details */
+
+
+
+
+
+/* b */
