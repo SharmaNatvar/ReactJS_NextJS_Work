@@ -10,9 +10,12 @@ const Home = () => {
   return (
     <>
      <h1>Home</h1> 
-     <button onClick={()=>{signOut(dataBase).then(val =>{
+     <button onClick={()=>{signOut(dataBase)
+     .then(val =>{
         navigate('/')
-     })}}>SingOut</button>
+     })
+     localStorage.removeItem('loginKey')
+     }}>SingOut</button>
     </>
   )
 }
