@@ -1,8 +1,5 @@
 todo not completed in this project 
 
-<div style="width:60px ; height:60px">
-![project](https://github.com/SharmaNatvar/ReactJS/blob/main/firebase-pr0/src/assets/img0.png?raw=true "project")
-<div>
 
 ## Screenshots
 
