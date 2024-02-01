@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login span,
+.singUp span{
+  cursor: pointer;
+color: blue;
+}
+
+.nav_bg{
+  width: 100vw;
+  height: 70px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.nav_bg ul{
+  display: flex;
+  list-style: none;
+}
+
+.nav_bg ul li{
+  margin: 3px 10px;
+  font-size: 25px;
+}
+
+.headilne{
+  font-size: 30px;
+  color: red;
+}
