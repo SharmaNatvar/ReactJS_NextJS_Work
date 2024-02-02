@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.login_bg p span,
+.sign_bg p span{
+  cursor: pointer;
+  color: blue;
+}
+
+.nav_bg{
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: beige;
+}
+
+.nav_bg ul{
+  display: flex;
+  list-style: none;
+}
+
+.nav_bg ul li{
+  font-size: 20px;
+  padding: 3px 10px;
+}
+
+.nav_bg button{
+  font-size: 20px;
+  padding: 3px 10px;
+  /* margin: 0 10px; */
+}
+
+.nav_bg button:first-child{
+  margin: 0 10px;
+}
+
+.todoBox{
+  border: 2px solid;
+  width: 200px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+.todoBox div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.url_bg{
+  border: 2px solid;
+  width: 355px;
+  padding: 2px;
+}
+.url_bg img{
+  width: 350px;
+  height: 200px;
+}
