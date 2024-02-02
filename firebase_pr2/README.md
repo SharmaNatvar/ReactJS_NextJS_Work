@@ -2,7 +2,7 @@
 
 ## Screenshots
 
-![project Screenshot](https://github.com/SharmaNatvar/ReactJS/blob/main/firebase-pr2/src/assets/img0.png?raw=true)
+![project Screenshot](https://github.com/SharmaNatvar/ReactJS/blob/main/firebase_pr2/src/assets/img0.png?raw=true)
 
 
 
