@@ -34,10 +34,10 @@ font-weight: bold;
 
 .login_box{
     width: 70%;
-    height: 65%;
-    border: 2px solid #5d77fb;
-    border-radius: 10px;
-    padding: 20px;
+    /* height: 65%; */
+    border: 0.1rem solid #5d77fb;
+    border-radius: 0.6rem;
+    padding: 2rem;
 }
 
 .login_h3{
@@ -45,32 +45,32 @@ font-weight: bold;
 }
 
 .login_p{
-    margin: 10px 0px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.327);
+    margin: 1rem 0rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.327);
 }
 
 .login_input label{
     font-weight: 600;
-    /* margin: 10px 10px; */
+    /* margin: 10rem 10rem; */
 }
 
 .login_input input{
     outline: none;
     border: none;
-    border-radius: 5px;
-    margin: 15px 5px;
+    border-radius: 0.5rem;
+    margin: 0.8rem 0.5rem;
     width: 90%;
-    height: 35px;
+    height: 2.3rem;
     font-weight: 600;
     color: black;
     font-size: 1rem;
-    padding: 5px 10px;
-    /* margin: 10px 10px; */
+    padding: 0.5rem 1rem;
+    /* margin: 10rem 10rem; */
 }
 
 .login_input input::placeholder{
-    /* margin: 10px 10px; */
+    /* margin: 10rem 10rem; */
     font-size: 1rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.297);
@@ -78,8 +78,8 @@ font-weight: bold;
 }
 
 .login_para{
-    margin: 10px 0px;
-    padding-bottom: 5px;
+    margin: 1rem 0rem;
+    padding-bottom: 1rem;
     cursor: pointer;
 }
 .login_para:hover span{
@@ -87,17 +87,17 @@ font-weight: bold;
 }
 
 .login_btn{
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
 
 }
 .login_btn button{
     width: 90%;
     outline: none;
     border: none;
-    border-radius: 10px;
-    padding: 10px 15px;
+    border-radius: 0.7rem;
+    padding: 0.6rem 1rem;
     font-size: 1.1rem;
-    margin: 10px ;
+    margin: 0.8rem ;
 
 }
 

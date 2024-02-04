@@ -37,3 +37,20 @@
 color: red;
 background: #000;
 }
+
+
+
+/* ============================================ */
+.home_Das{
+    background-color: #000;
+    height: 90vh;
+}
+
+.home_Das h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+}
+.home_Das img{
+    width: 100%;
+}
