@@ -1,21 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Navbar from '../Navbar/Navbar';
 import vLogo from "../../assets/votingLogo.png";
 import "./Main.css";
 
 const Main = () => {
-  //   const navigate = useNavigate();
 
-  //   useEffect(()=>{
-  //     if(localStorage.getItem("admin-log")){
-  //       navigate("/Home")
-  //     }
-  //   },[])
+
 
   return (
     <>
-      {/* <Navbar navData={false} /> */}
       <div className="logo_bg ">
         <div className="logo_box">
           <img src={vLogo} className="logo" alt="Logo" />
