@@ -42,304 +42,218 @@ const Users = () => {
 
         {/* card */}
         <div className="card_bg">
-          <div className="">
+          <div className="card">
             <div className="card_Padmin">
               {/* <time className="">9978543917</time> */}
               <p className="">admin</p>
             </div>
             <div className="cardProfile">
               <img src={profile} alt="image" className="" />
-              <div className="">
-                <p className="">krishna</p>
+              <div className="cardProfile_txt">
+                <h3 >krishna</h3>
                 <p className="">male</p>
               </div>
             </div>
-            <div className="">
+            <div className="card_contact">
               <h3 className="">9978542917</h3>
               <p className="">sdfgio dfghjkl dfghjkl dfghj</p>
             </div>
-            <div className="pt-4">
+            <div className="card_btn">
               <button>
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
+                  viewBox="0 0 1024 1024"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  //   {...props}
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
-                  />
+                  <path d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z" />
                 </svg>
               </button>
               <button>
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  //   {...props}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
-                  />
+                  <path d="M7 17.013l4.413-.015 9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583-1.597 1.582-1.586-1.585 1.594-1.58zM9 13.417l6.03-5.973 1.586 1.586-6.029 5.971L9 15.006v-1.589z" />
+                  <path d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card_Padmin">
+              {/* <time className="">9978543917</time> */}
+              <p className="">admin</p>
+            </div>
+            <div className="cardProfile">
+              <img src={profile} alt="image" className="" />
+              <div className="cardProfile_txt">
+                <h3 >krishna</h3>
+                <p className="">male</p>
+              </div>
+            </div>
+            <div className="card_contact">
+              <h3 className="">9978542917</h3>
+              <p className="">sdfgio dfghjkl dfghjkl dfghj</p>
+            </div>
+            <div className="card_btn">
+              <button>
+                <svg
+                  viewBox="0 0 1024 1024"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  //   {...props}
+                >
+                  <path d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z" />
+                </svg>
+              </button>
+              <button>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  //   {...props}
+                >
+                  <path d="M7 17.013l4.413-.015 9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583-1.597 1.582-1.586-1.585 1.594-1.58zM9 13.417l6.03-5.973 1.586 1.586-6.029 5.971L9 15.006v-1.589z" />
+                  <path d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card_Padmin">
+              {/* <time className="">9978543917</time> */}
+              <p className="">admin</p>
+            </div>
+            <div className="cardProfile">
+              <img src={profile} alt="image" className="" />
+              <div className="cardProfile_txt">
+                <h3 >krishna</h3>
+                <p className="">male</p>
+              </div>
+            </div>
+            <div className="card_contact">
+              <h3 className="">9978542917</h3>
+              <p className="">sdfgio dfghjkl dfghjkl dfghj</p>
+            </div>
+            <div className="card_btn">
+              <button>
+                <svg
+                  viewBox="0 0 1024 1024"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  //   {...props}
+                >
+                  <path d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z" />
+                </svg>
+              </button>
+              <button>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  //   {...props}
+                >
+                  <path d="M7 17.013l4.413-.015 9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583-1.597 1.582-1.586-1.585 1.594-1.58zM9 13.417l6.03-5.973 1.586 1.586-6.029 5.971L9 15.006v-1.589z" />
+                  <path d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card_Padmin">
+              {/* <time className="">9978543917</time> */}
+              <p className="">admin</p>
+            </div>
+            <div className="cardProfile">
+              <img src={profile} alt="image" className="" />
+              <div className="cardProfile_txt">
+                <h3 >krishna</h3>
+                <p className="">male</p>
+              </div>
+            </div>
+            <div className="card_contact">
+              <h3 className="">9978542917</h3>
+              <p className="">sdfgio dfghjkl dfghjkl dfghj</p>
+            </div>
+            <div className="card_btn">
+              <button>
+                <svg
+                  viewBox="0 0 1024 1024"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  //   {...props}
+                >
+                  <path d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z" />
+                </svg>
+              </button>
+              <button>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  //   {...props}
+                >
+                  <path d="M7 17.013l4.413-.015 9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583-1.597 1.582-1.586-1.585 1.594-1.58zM9 13.417l6.03-5.973 1.586 1.586-6.029 5.971L9 15.006v-1.589z" />
+                  <path d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card_Padmin">
+              {/* <time className="">9978543917</time> */}
+              <p className="">admin</p>
+            </div>
+            <div className="cardProfile">
+              <img src={profile} alt="image" className="" />
+              <div className="cardProfile_txt">
+                <h3 >krishna</h3>
+                <p className="">male</p>
+              </div>
+            </div>
+            <div className="card_contact">
+              <h3 className="">9978542917</h3>
+              <p className="">sdfgio dfghjkl dfghjkl dfghj</p>
+            </div>
+            <div className="card_btn">
+              <button>
+                <svg
+                  viewBox="0 0 1024 1024"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  //   {...props}
+                >
+                  <path d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z" />
+                </svg>
+              </button>
+              <button onClick={ ()=> navigate('/signup')}>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  //   {...props}
+                >
+                  <path d="M7 17.013l4.413-.015 9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583-1.597 1.582-1.586-1.585 1.594-1.58zM9 13.417l6.03-5.973 1.586 1.586-6.029 5.971L9 15.006v-1.589z" />
+                  <path d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
                 </svg>
               </button>
             </div>
           </div>
         </div>
 
-        {/* table for user data */}
-
-        {/* <table >
-                <thead >
-                  <tr>
-                    <th scope="col" className="px-2 py-1">
-                      User Email
-                    </th>
-                    <th scope="col" className="px-2 py-1">
-                      View
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-
-                      <tr >
-                        <td className="px-2 py-1"></td>
-                        <td className="p-4">
-                          <button >
-                            More...
-                          </button>
-                        </td>
-                      </tr>
-                </tbody>
-              </table> */}
-
-        {/* <table> */}
-        {/* <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                  <tr>
-                    <th scope="col" className="px-2 py-1">
-                      User Profile
-                    </th>
-                    <th scope="col" className="px-2 py-1">
-                      Email
-                    </th>
-                    <th scope="col" className="px-2 py-1">
-                      View
-                    </th>
-                  </tr>
-                </thead> */}
-        {/* <tbody>
-
-                      <tr>
-                        <td >
-                          <img  alt="profile-img" />
-                        </td>
-                        <td className="px-2 py-1">d</td>
-                        <td className="px-2 py-1">
-                          <button >
-                            More...
-                          </button>
-                        </td>
-                      </tr>
-                </tbody> */}
-        {/* </table> */}
-
-        {/* <table > */}
-        {/* <thead >
-                  <tr>
-                    <th >
-                      User Profile
-                    </th>
-                    <th >
-                      Name
-                    </th>
-                    <th >
-                      Email
-                    </th>
-                    <th >
-                      View
-                    </th>
-                    <th >
-                      Delete
-                    </th>
-                  </tr>
-                </thead> */}
-        {/* <tbody>
-                
-                      <tr >
-                        <td >
-                          <img  alt="profile-img" />
-                        </td>
-                        <td className="px-4 py-3">f</td>
-                        <td className="px-4 py-3">f</td>
-                        <td className="px-4 py-3">
-                          <button>
-                            More...
-                          </button>
-                        </td>
-                        <td className="px-4 py-3">
-                          <button >
-                            Delete
-                          </button>
-                        </td>
-                      </tr>
-                </tbody> */}
-
-        {/* <table > */}
-        {/* <thead >
-                  <tr>
-                    <th scope="col" >
-                      User Profile
-                    </th>
-                    <th scope="col" >
-                      Name
-                    </th>
-                    <th scope="col" >
-                      Phone
-                    </th>
-                    <th scope="col" >
-                      Email
-                    </th>
-                    <th scope="col" >
-                      View
-                    </th>
-                    <th scope="col" >
-                      Delete
-                    </th>
-                  </tr>
-                </thead> */}
-        {/* <tbody>
-                 
-                      <tr >
-                        <td >
-                          <img  alt="profile-img"  />
-                        </td>
-                        <td className="px-4 py-3">f</td>
-                        <td className="px-4 py-3">f</td>
-                        <td className="px-4 py-3">f</td>
-                        <td className="px-4 py-3">
-                          <button >
-                            More...
-                          </button>
-                        </td>
-                        <td className="px-4 py-3">
-                          <button >
-                            Delete
-                          </button>
-                        </td>
-                      </tr>
-                </tbody> */}
-        {/* </table> */}
-
-        {/* <table > */}
-        {/* <thead >
-                  <tr>
-                    <th scope="col" >
-                      User Profile
-                    </th>
-                    <th scope="col" >
-                      Name
-                    </th>
-                    <th scope="col" >
-                      Sex
-                    </th>
-                    <th scope="col" >
-                      DOB
-                    </th>
-                    <th scope="col" >
-                      Phone
-                    </th>
-                    <th scope="col" >
-                      Email
-                    </th>
-                    <th scope="col" >
-                      Address
-                    </th>
-                    <th scope="col" >
-                      View
-                    </th>
-                    <th scope="col" >
-                      Delete
-                    </th>
-                  </tr>
-                </thead> */}
-        {/* <tbody>
-                 
-                      <tr >
-                        <td >
-                          <img  alt="profile-img" />
-                        </td>
-                        <td >s</td>
-                        <td >f</td>
-                        <td >sf</td>
-                        <td >sf</td>
-                        <td >sf</td>
-                        <td >sf</td>
-                        <td >
-                          <button >
-                            More...
-                          </button>
-                        </td>
-                        <td className="px-4 py-3">
-                          <button >
-                            Delete
-                          </button>
-                        </td>
-                      </tr>
-                </tbody> */}
-        {/* </table> */}
-
-        {/* <div>
-                  <h5 className="font-bold text-[18px] mb-[10px]" >Update Details</h5>
-                </div> */}
-        {/* <div className="image flex justify-center">
-                  <img alt="profile-img" className=" rounded-full my-2 w-[80px]" />
-                </div> */}
-        {/* <div>
-                  <label htmlFor='voterId'>Profile Image Link</label>
-                  <br />
-                  <input type="text" name="Profile" />
-                </div> */}
-        {/* <div>
-                  <label htmlFor='voterId'>Name</label>
-                  <br />
-                  <input type="text"  name="Name" />
-                </div> */}
-        {/* <div>
-                  <label htmlFor='voterId'>Sex</label>
-                  <br />
-                  <input type="text" name="Sex" />
-                </div> */}
-        {/* <div>
-                  <label htmlFor='voterId'>DOB</label>
-                  <br />
-                  <input type="text" name="DOB" />
-                </div> */}
-        {/* <div>
-                  <label htmlFor='voterId'>Phone</label>
-                  <br />
-                  <input type="text"  name="Phone" />
-                </div> */}
-        {/* <div>
-                  <label htmlFor='voterId'>Email</label>
-                  <br />
-                  <input type="text"  name="Email" />
-                </div> */}
-        {/* <div>
-                  <label htmlFor='voterId' className="font-semibold mb-[10px] ml-2">Address</label>
-                  <br />
-                  <input type="text"  name="Address" />
-                </div> */}
-        {/* <div className="flex justify-center mt-3">
-                  <button>Update</button>
-                </div> */}
       </div>
     </>
   );

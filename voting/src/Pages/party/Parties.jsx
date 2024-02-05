@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-const Election = () => {
+const Parties = () => {
 
   const navigate = useNavigate();
 
@@ -30,16 +30,17 @@ const Election = () => {
               <input
                 type="search"
                 id="default-search"
-                placeholder="Search Election ..."
+                placeholder="Search Party..."
                 required=""
               />
               <button type="submit">Search</button>
             </div>
-            <button onClick={() => navigate("/addelection")}>Add Election </button>
+            <button onClick={() => navigate("/addparty")}>Add Party</button>
           </div>
         </form>
+     <h1>ViewParties</h1> 
     </>
   )
 }
 
-export default Election
+export default Parties
