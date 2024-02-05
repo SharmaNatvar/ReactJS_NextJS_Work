@@ -7,7 +7,7 @@ import AddElection from "./Pages/Election/AddElection";
 import AddParty from "./Pages/party/AddParty";
 import Election from "./Pages/Election/Election";
 import Parties from "./Pages/party/Parties";
-import Votes from "./Pages/Election/Votes";
+import Votes from "./Pages/Votes/Votes";
 import Users from "./Pages/Users/Users";
 import AddUsers from "./Pages/Users/AddUsers";
 import Profile from "./Component/Profile/Profile";

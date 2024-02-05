@@ -1,0 +1,133 @@
+/* elction css */
+.election_bg{
+    width: 100%;
+    min-height: 44rem;
+    background-color: #000000;
+    color: #ffe;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.election{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 2rem;
+/* margin: 0 auto; */
+}
+
+th,td{
+    font-size: 1.3rem;
+    padding: 1rem;
+    border: 1px solid red;
+text-align: center;
+}
+
+.election_btn button{
+    /* width: 40%; */
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+    margin: 0.2rem ;
+
+}
+
+.election_btn button:hover{
+    color: red;
+background: #000;
+cursor: pointer;
+}
+
+
+
+/* add election Css */
+
+.addElection_bg{
+    background: #000;
+    color: #ffe;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.addElection{
+    width: 50%;
+    height: 55%;
+    border: 2px solid red;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.addElection h1{
+    font-size: 3rem;
+    color: red;
+    text-align: center;
+}
+
+.addElection h3{
+    color: rgb(161, 226, 252);
+    text-align: center;
+    margin: 1.3rem 0;
+
+}
+
+
+.addElection_input{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.addElection_input label{
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+
+.addElection_input input{
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.8rem 0.5rem;
+    width: 90%;
+    height: 2.3rem;
+    font-weight: 600;
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    /* margin: 10rem 10rem; */
+}
+
+.addElection_input input::placeholder{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.297);
+}
+
+.addElection_btn{
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+
+}
+.addElection_btn button{
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+    margin: 0.8rem ;
+
+}
+
+
+.addElection_btn button:hover{
+    color: red;
+background: #000;
+cursor: pointer;
+}
+

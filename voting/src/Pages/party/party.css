@@ -1,0 +1,195 @@
+/* party css */
+.party_bg{
+    width: 100%;
+    min-height: 44rem;
+    background-color: #000000;
+    color: #ffe;
+    padding: 0 3rem;
+    padding-top: 1rem;
+    
+}
+
+.party_bg h2{
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.party{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.party_box{
+    width: 28rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #fff;
+color: #000;
+margin: 2rem;
+border-radius: 0.5rem;
+padding: 1rem;
+}
+
+.party img{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.party h2{
+    color: red;
+    padding-bottom: 2px;
+    font-size: 2rem;
+    /* width: 5rem; */
+    /* border-radius: 50%; */
+}
+
+.party_btn{
+    display: flex;
+    flex-direction: column !important;
+}
+
+.party_btn button{
+    /* width: 40%; */
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+    margin: 0.2rem ;
+
+}
+
+
+.party_btn button:hover{
+    color: red;
+background: #000;
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* add party css */
+.addParty_bg{
+    background: #000;
+    color: #ffe;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.addParty{
+    width: 50%;
+    height: 70%;
+    border: 2px solid red;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.addParty h1{
+    /* width: 50%; */
+    font-size: 3rem;
+    color: red;
+    text-align: center;
+}
+
+.addParty h3{
+    /* width: 50%; */
+    color: rgb(161, 226, 252);
+    text-align: center;
+    margin: 1.3rem 0;
+
+}
+
+
+.addParty_input{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.addParty_input label{
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+
+.addParty_input input{
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.8rem 0.5rem;
+    width: 90%;
+    height: 2.3rem;
+    font-weight: 600;
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    /* margin: 10rem 10rem; */
+}
+
+.addParty_input input::placeholder{
+    /* margin: 10rem 10rem; */
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.297);
+}
+
+.addParty_img{
+    width: 100%;
+    margin: 1rem 0;
+}
+.addParty_img input::-webkit-file-upload-button{
+    /* width: 40%; */
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+    /* margin: 0.8rem ; */
+}
+
+.addParty_img label{
+    /* width: 9rem; */
+    padding-right:  1rem;
+
+    font-size: 1.1rem;
+    /* display: flex !important; */
+ /* background: #fff;    */
+}
+
+.addParty_btn{
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+
+}
+.addParty_btn button{
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+    margin: 0.8rem ;
+
+}
+
+
+.addParty_btn button:hover{
+    color: red;
+background: #000;
+cursor: pointer;
+}
