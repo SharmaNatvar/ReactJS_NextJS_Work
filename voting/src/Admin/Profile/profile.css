@@ -1,0 +1,93 @@
+.profile_bg {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+
+.profile_bg h1{
+    font-size: 3.3rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.profile{
+    border: 2px solid red;
+    padding: 1.5rem;
+    width: 70%;
+    border-radius: 10px;
+    margin: 1rem auto;
+}
+
+
+.profile_Padmin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.profile_Padmin p{
+background-color: rgb(224, 224, 224);
+color: rgba(0, 0, 0, 0.352);
+width: 4rem;
+font-size: 0.7rem;
+text-align: center;
+border-radius: 10px;
+padding: 0.3rem 0rem;
+}
+
+.profile_Padmin svg{
+    color: rgb(5, 253, 5);
+}
+
+.profileProfile{
+    padding: 2rem 0;
+}
+.profileProfile img{
+    width: 10rem;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.profileProfile_txt{
+    text-align: center;
+}
+
+.profileProfile_txt h2{
+font-size: 3rem;
+}
+
+.profileProfile_txt p{
+    font-size: 1.5rem;
+    }
+
+.profile_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .profile_btn button{
+        width: 40%;
+        outline: none;
+        border: none;
+        border-radius: 0.7rem;
+        padding: 0.6rem 1rem;
+        font-size: 1.1rem;
+        margin: 0.8rem ;
+    
+    }
+    
+    
+    .profile_btn button:hover{
+        color: red;
+    background: #000;
+    cursor: pointer;
+    }
+    
+    .profile_contact,
+    .profile_info{
+        margin: 1rem;
+    }

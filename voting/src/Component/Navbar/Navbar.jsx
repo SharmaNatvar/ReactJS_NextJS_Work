@@ -10,6 +10,12 @@ import './navbar.css'
 const Navbar = () => {
   const navigate = useNavigate();
 
+  function handleLogout(){
+    localStorage.removeItem('loginKey')
+    localStorage.removeItem('loginDetail')
+    navigate('/')
+  }
+
   return (
     <>
       <nav className="nav_bg">
@@ -36,7 +42,7 @@ const Navbar = () => {
                 <Link to="/profile">Profile</Link>
               </li>
             </ul>
-              <button className="nav_btn" onClick={()=>navigate('/')}>Logout </button>
+              <button className="nav_btn" onClick={handleLogout}>Logout </button>
           </div>
         </div>
       </nav>
