@@ -13,8 +13,11 @@ import AddUsers from "./Admin/Users/AddUsers";
 import Profile from "./Admin/Profile/Profile";
 import NotFound from "./Component/NotFound";
 import ProtectRouter from "./Component/ProtectRouter";
+import VotesU from "./User/pages/Votes";
 
 function App() {
+
+  const role = 'admin'
   return (
     <>
       <Routes>
@@ -22,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<ProtectRouter />}>
+        { role === 'admin' ?<>
           <Route path="/home" element={<Home />} />
           <Route path="/addelection" element={<AddElection />} />
           <Route path="/addparty" element={<AddParty />} />
@@ -31,6 +35,16 @@ function App() {
           <Route path="/users" element={<Users />} />
           <Route path="/addusers" element={<AddUsers />} />
           <Route path="/profile" element={<Profile />} />
+
+        </>
+        
+      :<>
+          <Route path="/home" element={<Home/>} />
+          <Route path="/vote" element={<VotesU/>} />
+          <Route path="/profile" element={<Profile/>} />
+
+      </> }
+         
         </Route>
           <Route path="*" element={<NotFound />} />
       </Routes>
