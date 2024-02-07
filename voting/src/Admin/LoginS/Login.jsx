@@ -24,7 +24,7 @@ const Login = () => {
     // navigate("/home");
     console.log(loginDetail,'loginDetail');
     console.log(loginDetail.AccessToken,'loginDetail.AccessToken');
-    await localStorage.setItem('loginDetail',JSON.stringify(loginDetail))
+    localStorage.setItem('loginDetail',JSON.stringify(loginDetail))
     localStorage.setItem('loginKey',JSON.stringify(loginDetail.AccessToken))
     const login = JSON.parse(localStorage.getItem('loginDetail'))
     login.AccessToken ? navigate('/home'): navigate('/')
