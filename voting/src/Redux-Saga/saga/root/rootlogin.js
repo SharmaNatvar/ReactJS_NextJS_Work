@@ -1,7 +1,3 @@
-
-
-
-
 // post login Data
 
 import { takeLatest } from "redux-saga/effects";
