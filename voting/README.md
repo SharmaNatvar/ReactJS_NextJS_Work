@@ -58,10 +58,10 @@
 
 
 
-
+<!-- 
 ## Screenshots10
 
-![project Screenshot](https://github.com/SharmaNatvar/ReactJS/blob/main/voting/src/assets/ss/img10.png?raw=true)
+![project Screenshot](https://github.com/SharmaNatvar/ReactJS/blob/main/voting/src/assets/ss/img10.png?raw=true) -->
 
 
 

@@ -1,21 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./main.css";
-import { useDispatch, useSelector } from "react-redux";
-import { POST_LOGIN_PENDING } from "../../Redux-Saga/admin/Action/loginAction";
 import axios from "axios";
 import { BASE_URL, LOGIN_ENDPOINT } from "../../Redux-Saga/constant";
 
-const Login = () => {
+const Login = ({setLoginRole }) => {
+  console.log();
+
   const [loginData, setLoginData] = useState({});
   const [txt, setTxt] = useState(false);
   const navigate = useNavigate();
 
-  // const dispatch = useDispatch()
-  // const selector = useSelector((state)=>state.adminReducer)
+  useEffect(()=>{
+    // setLoginRole(txt === true ? 'User' : 'Admin')
 
-  // console.log(selector.data,'selector');
-  // const loginDetail = selector.data
+    localStorage.setItem('loginRole',JSON.stringify(txt === true ? 'User' : 'Admin'))
+  },[txt])
   
   const getInputData = (e) => {
     setLoginData({ ...loginData, [e.target.name]: e.target.value });
@@ -54,26 +54,17 @@ const Login = () => {
           <div className="login_form">
             <div className="login_box">
               <h3 className="login_h3">
-                Login With{" "}
-                {txt !== true ? ` ${"Mobile no. "}` : `${"Voting ID. "}`}
+                Login As{" "}
+                {txt !== true ? ` ${" Admin "}` : `${"User"}`}
               </h3>
               <p className="login_p">Indian Resident Elector</p>
               <div className="login_input">
-                <label>Enter Name</label>
-                <br />
-                <input type="text" placeholder="Enter Your Name " name="Name" onChange={getInputData}/>
-              </div>
-              <div className="login_input">
                 <label>
                   Enter{" "}
-                  {txt !== true ? ` ${"Email ID "}` : `${"Voting ID. "}`}
+                  {txt !== true ? ` ${" Admin ID "}` : `${"User ID. "}`}
                 </label>
                 <br />
-                {txt !== true ? (
                   <input type="email" placeholder="Enter Your Email ID" name="Email" onChange={getInputData}/>
-                ) : (
-                  <input type="txt" placeholder="Enter Your Voting ID " name="adminVoting" onChange={getInputData}/>
-                )}
               </div>
               <div className="login_input">
                 <label>Enter Password</label>
@@ -84,20 +75,10 @@ const Login = () => {
                 className="login_para"
                 onClick={() => setTxt(txt !== true ? true : false)}
               >
-                Log In With{" "}
+                Log as{" "}
                 <span>
                   {" "}
-                  {txt === true ? ` ${"Email no. ?"}` : `${"Voting ID. ?"}`}
-                </span>
-              </p>
-              <p
-                className="login_para"
-                onClick={() => setTxt(txt !== true ? true : false)}
-              >
-                Log In With{" "}
-                <span>
-                  {" "}
-                  {txt === true ? ` ${"Mobile no. ?"}` : `${"Voting ID. ?"}`}
+                  {txt === true ? ` ${" Admin ?"}` : `${" User ?"}`}
                 </span>
               </p>
               <p className="login_para" onClick={() => navigate("/signup")}>

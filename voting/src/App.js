@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Main from "./Admin/Home/Main";
-import Login from "./Admin/LoginS/Login";
-import SignUp from "./Admin/LoginS/SignUp";
+import Login from "./Component/LoginS/Login";
+import SignUp from "./Component/LoginS/SignUp";
 import Home from "./Admin/Home/Home";
 import AddElection from "./Admin/Election/AddElection";
 import AddParty from "./Admin/party/AddParty";
@@ -14,19 +14,28 @@ import Profile from "./Admin/Profile/Profile";
 import NotFound from "./Component/NotFound";
 import ProtectRouter from "./Component/ProtectRouter";
 import VotesU from "./User/pages/Votes";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [loginRole , setLoginRole] = useState()
 
-  const role = 'admin'
+  console.log(loginRole,'appjs');
+  useEffect(()=>{
+    setLoginRole(JSON.parse(localStorage.getItem('loginRole')) )
+  },[loginRole])
+  const role = loginRole
+  console.log(role,'appjs');
+
+
   return (
     <>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login setLoginRole={setLoginRole}/>} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<ProtectRouter />}>
-        { role === 'admin' ?<>
-          <Route path="/home" element={<Home />} />
+        { role === 'Admin' ?<>
+          <Route path="/home" element={<Home loginRole={loginRole}/>} />
           <Route path="/addelection" element={<AddElection />} />
           <Route path="/addparty" element={<AddParty />} />
           <Route path="/election" element={<Election />} />

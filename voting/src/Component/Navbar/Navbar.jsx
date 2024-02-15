@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import vote from "../../assets/vote.png";
 import { navAdmin } from "../../Admin/NavBar/navAdmin";
@@ -9,15 +9,19 @@ import { navUser } from "../../User/NavBar/navUser";
 // import { toast } from 'react-toastify';
 // import "";
 const Navbar = () => {
-  const navigate = useNavigate();
-  const login = JSON.parse(localStorage.getItem('loginKey'))
-  const Role = login
+const navigate = useNavigate();
+const [loginRole , setLoginRole] = useState()
+useEffect(()=>{
+
+setLoginRole(JSON.parse(localStorage.getItem('loginRole')) || 'User')
+},[loginRole])
+const Role = loginRole
 console.log(Role , 'r');
-  function handleLogout(){
-    localStorage.removeItem('loginKey')
-    localStorage.removeItem('loginDetail')
-    navigate('/')
-  }
+function handleLogout(){
+  localStorage.removeItem('loginKey')
+  localStorage.removeItem('loginDetail')
+  navigate('/')
+}
 
   return (
     <>
@@ -30,7 +34,7 @@ console.log(Role , 'r');
           <div className="nav_list">
             <ul className="nav_list_ul">
             {
-              Role === 'Admin' || 'admin'?
+              Role === 'Admin'?
               navAdmin.map((e)=>{
                  return <li className="nav_list_li" key={e.key}>
                 <Link to={e.path}>{e.label}</Link>
