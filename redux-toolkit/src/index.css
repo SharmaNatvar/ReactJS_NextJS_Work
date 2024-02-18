@@ -1,0 +1,56 @@
+.nav_Bg{
+  text-align: center;
+}
+
+.nav_Bg ul{
+  display: flex;
+  list-style: none;
+  /* gap: 3rem; */
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+  background-color: bisque;
+  padding: 1rem;
+}
+
+.nav_Bg li{
+  border-bottom: 3px solid ;
+}
+
+.userDetails_bg{
+  background-color: beige;
+}
+
+.userDetails_text{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 5rem; */
+}
+
+button{
+  padding: 5px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.1rem;
+}
+.userDetails_bg ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.userSelClass{
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.userSelClass button{
+  padding: 3px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
