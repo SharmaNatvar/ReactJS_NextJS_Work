@@ -4,6 +4,7 @@ import SwitchBtn from '../../Components/SwitchBtn'
 import useFetch from '../../Hook/useFetch'
 import Carousel from '../../Components/Carousel'
 
+
 const HomeTrending = () => {
     const [endpoint , setEndpoint] = useState('day')
     const {data , loading } = useFetch(`/trending/all/${endpoint}`)

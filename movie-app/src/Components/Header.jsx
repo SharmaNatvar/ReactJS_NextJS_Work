@@ -76,7 +76,7 @@ const Header = () => {
   return (
     <header className={`head_BG ${ mobileMenu ? "headMobileView" : " "} ${show}`}>
       <Container>
-        <div className="headLogo">
+        <div className="headLogo" onClick={()=> navigate('/')}>
           <img src={logo} alt="logo" />
         </div>
         <ul className="headMenuItems">

@@ -476,7 +476,7 @@
 
 // CircleRating css start
 
-.circuleRating {
+.circleRating {
     background-color: var(--black);
     border-radius: 50%;
     padding: 2px;
@@ -491,3 +491,222 @@
 }
 
 // CircleRating css end
+
+
+// Genres css start
+
+.genres {
+    display: flex;
+    gap: 5px;
+    .genre {
+        background-color: var(--pink);
+        padding: 3px 5px;
+        font-size: 12px;
+        border-radius: 4px;
+        color: white;
+        white-space: nowrap;
+    }
+}
+
+// Genres css end
+
+
+
+
+// videopopup css start
+
+.videoPopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    .opacityLayer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(3.5px);
+        -webkit-backdrop-filter: blur(3.5px);
+        opacity: 0;
+        transition: opacity 400ms;
+    }
+    .videoPlayer {
+        position: relative;
+        width: 800px;
+        aspect-ratio: 16 / 9;
+        background-color: white;
+        transform: scale(0.2);
+        transition: transform 250ms;
+        .closeBtn {
+            position: absolute;
+            top: -20px;
+            right: 0;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+        .opacityLayer {
+            opacity: 1;
+        }
+        .videoPlayer {
+            transform: scale(1);
+        }
+    }
+}
+
+// videopopup css end
+
+
+
+// Spinner css start
+
+.loadingSpinner {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .spinner {
+        animation: rotate 2s linear infinite;
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+        & .path {
+            stroke: rgb(147, 191, 236);
+            stroke-linecap: round;
+            animation: dash 1.5s ease-in-out infinite;
+        }
+    }
+
+    &.initial {
+        height: 700px;
+    }
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes dash {
+        0% {
+            stroke-dasharray: 1, 150;
+            stroke-dashoffset: 0;
+        }
+        50% {
+            stroke-dasharray: 90, 150;
+            stroke-dashoffset: -35;
+        }
+        100% {
+            stroke-dasharray: 90, 150;
+            stroke-dashoffset: -124;
+        }
+    }
+}
+
+// Spinner css end
+
+
+// MovieCard css strat
+
+.movieCard {
+    width: calc(50% - 5px);
+    margin-bottom: 25px;
+    cursor: pointer;
+    flex-shrink: 0;
+    @include md {
+        width: calc(25% - 15px);
+    }
+    @include lg {
+        width: calc(20% - 16px);
+    }
+    .posterBlock {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1 / 1.5;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 10px;
+        transition: all ease 0.5s;
+        .lazy-load-image-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .circleRating {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            top: 30px;
+            background-color: white;
+            flex-shrink: 0;
+            @include md {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .genres {
+            display: none;
+            position: relative;
+            @include md {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: flex-end;
+            }
+        }
+    }
+    .textBlock {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        .title {
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 24px;
+            @include ellipsis(1);
+            @include md {
+                font-size: 20px;
+            }
+        }
+        .date {
+            font-size: 14px;
+            opacity: 0.5;
+        }
+    }
+    &:hover {
+        .posterBlock {
+            opacity: 0.5;
+        }
+    }
+}
+
+// MovieCard css end
+
+
